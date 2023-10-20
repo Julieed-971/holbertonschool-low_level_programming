@@ -2,10 +2,10 @@ CC = gcc
 SRC = main.c school.c
 
 all: main.o school.o
-	$(CC) -o school main.o school.o
-
-main.o: main.c
-	$(CC) -o main.o $(SRC)
+	$(CC) $(SRC) -o school
 
 school.o: school.c
 	$(CC) -o school.o $(SRC) 
+
+main.o: main.c
+	$(CC) -o main.o $(SRC)
