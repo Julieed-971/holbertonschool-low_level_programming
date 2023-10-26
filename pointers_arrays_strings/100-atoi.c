@@ -9,7 +9,7 @@ int _atoi(char *s)
 {
 	int x = 0;
 	int sign = 1;
-	int res = 0;
+	unsigned int res = 0;
 
 	while (s[x] != '\0')
 	{
