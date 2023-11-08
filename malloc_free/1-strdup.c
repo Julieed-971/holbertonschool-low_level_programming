@@ -14,7 +14,7 @@ char *_strdup(char *str)
 {
 	char *s = malloc(strlen(str) + 1);
 
-	if (str == 0)
+	if (s == 0)
 	{
 		free(s);
 		return (NULL);
