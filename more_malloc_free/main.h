@@ -2,7 +2,6 @@
 #define MAIN_H
 #include <stdio.h>
 #include <stdlib.h>
-#include <type.h>
 #include <stddef.h>
 
 void *malloc_checked(unsigned int b);
