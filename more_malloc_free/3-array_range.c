@@ -3,13 +3,13 @@
 /**
  * array_range - creates an array of int
  * @min: minimum value
- * @max: maximum valut
+ * @max: maximum value
  * Return: pointer to the array
  */
 
 int *array_range(int min, int max)
 {
-	int len = 0;
+	int len = min;
 	int *arr;
 	int i;
 
