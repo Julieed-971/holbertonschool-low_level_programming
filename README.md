@@ -1,1 +1,1 @@
-This repo contains all my tasks for the Project C - Hello, World
+This directory contains all my files for the structures typedef project
