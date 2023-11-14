@@ -1,4 +1,3 @@
-#include "main.h"
 #include "dog.h"
 #include <string.h>
 
@@ -7,6 +6,8 @@
  * @str: pointer to a string
  * Return: pointer to a string
  */
+
+char *_strdup(char *str);
 
 char *_strdup(char *str)
 {
