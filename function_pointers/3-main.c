@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - calculate with two int input
@@ -21,8 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (op[0] != '+' && op[0] != '-' && op[0] != '*'
-			&& op[0] != '/' && op[0] != '%')
+	if (strlen(op) != 1)
 	{
 		printf("Error\n");
 		exit(99);
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	printf("%d\n", get_op_func(op)(a, b));
+	printf("%d\n", (*get_op_func(op))(a, b));
 	return (0);
 }
 
