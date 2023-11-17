@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (strlen(op) != 1)
+	if (strlen(op) != 1 || strcmp(op, ".") == 0)
 	{
 		printf("Error\n");
 		exit(99);
