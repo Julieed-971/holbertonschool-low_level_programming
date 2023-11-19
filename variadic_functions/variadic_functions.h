@@ -3,8 +3,9 @@
 #include <stdarg.h>
 /**
  * struct form - structure of a format specifier and its corresponding function
- * @c: format specifier.
- * @format: function pointer to the corresponding function.
+ *
+ * @c: format specifier
+ * @format: function pointer to the corresponding function
  */
 struct form
 {
