@@ -6,6 +6,12 @@
  *
  * @c: format specifier
  * @format: function pointer to the corresponding function
+ *
+ * Description: 
+ * This structure associate format specifiers with functions in variadic functions 
+ * in order to process various types of data with the provided format specifier. 
+ * The c member corresponds to the format specifier and the format member is a 
+ * function pointer poiting to the function that will process the data of that type.
  */
 struct form
 {
