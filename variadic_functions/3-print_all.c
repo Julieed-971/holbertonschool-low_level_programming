@@ -6,7 +6,6 @@
  * form_char- print a character
  * @args: pointer to the argument list
  */
-
 void form_char(va_list args)
 {
 	printf("%c", va_arg(args, int));
@@ -26,7 +25,6 @@ void form_int(va_list args)
  * form_float - print a float
  * @args: pointer to the argument list
  */
-
 void form_float(va_list args)
 {
 	printf("%f", va_arg(args, double));
@@ -36,7 +34,6 @@ void form_float(va_list args)
  * form_str - print a string
  * @args: pointer to the argument list
  */
-
 void form_str(va_list args)
 {
 	char *str = va_arg(args, char *);
@@ -48,17 +45,16 @@ void form_str(va_list args)
 
 /**
  * print_all - function that prints anything
- * @format: list of types
+ * @format: string of char listing the argument types
+ * @...: undetermined number of arguments
  */
-
 void print_all(const char * const format, ...)
 {
+	va_list args;
 	int i = 0;
 	int j = 0;
 	char *sep = "";
-	va_list args;
-
-	struct form table[] = {
+	form_t table[] = {
 		{"c", form_char},
 		{"i", form_int},
 		{"f", form_float},
@@ -75,7 +71,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *table[j].c)
 			{
 				printf("%s", sep);
-				table[j].format(args);
+				table[j].form(args);
 				sep = ", ";
 			}
 			j++;
