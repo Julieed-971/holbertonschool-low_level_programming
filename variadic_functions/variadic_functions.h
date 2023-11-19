@@ -1,11 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 /**
- * struct form - structure for format to print
- *
- * @c: first argument
- * @format: function associated
+ * struct form - structure of a format specifier and its corresponding function
+ * @c: format specifier.
+ * @format: function pointer to the corresponding function.
  */
 struct form
 {
