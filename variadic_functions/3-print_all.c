@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "variadic_functions.h"
 
 /**
  * form_char- print a character
