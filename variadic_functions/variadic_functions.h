@@ -7,11 +7,11 @@
  * @c: first argument
  * @format: function associated
  */
-typedef struct form
+struct form
 {
 	char *c;
 	void (*format)(va_list);
-} format;
+};
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
