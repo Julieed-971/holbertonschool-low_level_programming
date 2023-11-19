@@ -9,8 +9,8 @@
  */
 struct form
 {
-	char *c;
-	void (*format)(va_list);
+        char *c;
+        void (*format)(va_list);
 };
 
 int _putchar(char c);
