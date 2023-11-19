@@ -1,22 +1,25 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
+
 /**
- * struct form - structure of a format specifier and its corresponding function
+ * struct form - Structure of a format specifier and corresponding function.
  *
- * @c: format specifier
- * @format: function pointer to the corresponding function
+ * @c: Format specifier of the type of data to be processed.
+ * @form: Function pointer to corresponding function processing the data.
  *
- * Description: 
- * This structure associate format specifiers with functions in variadic functions 
- * in order to process various types of data with the provided format specifier. 
- * The c member corresponds to the format specifier and the format member is a 
- * function pointer poiting to the function that will process the data of that type.
+ * Description:
+ * This structure associate format specifiers with functions
+ * in variadic functions in order to process various types
+ * of data with the provided format specifier.
+ * The c member corresponds to the format specifier
+ * and the format member is a function pointer
+ * poiting to the function that will process the data of that type.
  */
 struct form
 {
-        char *c;
-        void (*format)(va_list);
+	char *c;
+	void (*form)(va_list);
 };
 
 int _putchar(char c);
