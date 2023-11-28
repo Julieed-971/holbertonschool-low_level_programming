@@ -5,8 +5,6 @@
 -	[Objective](#Objective)
 -	[Requirements](#Requirements)
 -	[Mandatory tasks](#Mandatory-tasks)
--	[Examples and tests](#Examples-and-tests)
--	[Author](#Author)
 
 ##	Objective
 
@@ -45,7 +43,3 @@ Write a function that adds a new node at the end of a l`list_t` list.
 ### 4. Free list
 
 Write a function that frees a `list_t` list.
-
-##	Examples and tests
-
-
