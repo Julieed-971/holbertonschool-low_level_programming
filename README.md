@@ -1,51 +1,48 @@
-# C - Singly linked list
+# <p align="center">C - Bit manipulation
 
-##	Table of Contents
+## Table of contents
 
 -	[Objective](#Objective)
 -	[Requirements](#Requirements)
 -	[Mandatory tasks](#Mandatory-tasks)
--	[Examples and tests](#Examples-and-tests)
--	[Author](#Author)
 
-##	Objective
+## Objective
 
-The objective of this project is to learn about single linked lists:
-- 	When and why using linked lists vs arrays
--	How to build and use linked lists
+    Look for the right source of information without too much help
+    How to manipulate bits and use bitwise operators
 
-##	Requirements
+## Requirements
 
--	Allowed editors: `vi`, `vim`, `emacs`
--   All files will be compiled on Ubuntu 20.04 LTS
--   Code must follow the `Betty` style
--   Global variables are not allowed
--	No more than 5 functions per file
--	The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden.
--	All prototypes for functions should be included in our header file `lists.h
+    Allowed editors: `vi`, `vim`, `emacs`
+    All files will be compiled on Ubuntu 20.04 LTS
+    Code must follow the `Betty` style
+    Global variables are not allowed
+    No more than 5 functions per file
+    The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden.
+    All prototypes for functions should be included in our header file `main.h`
 
-##	Mandatory tasks
+## Mandatory tasks
 
-### 0. Print list
+### 0.0
 
-Write a function that prints all the elements of a `list_t` list.
+Write a function that converts a binary number to an `unsigned int`.
 
-### 1. List length
+### 1.1
 
-Write a function that returns the number of elements in a linked `list_t` list.
+Write a function that prints the binary representation of a number.
 
-### 2. Add node
+### 2.10
 
-Write a function that adds a new node at the beginning of a `list_t` list.
+Write a function that returns the value of a bit at a given index.
 
-### 3. Add node at the end
+### 3.11
 
-Write a function that adds a new node at the end of a l`list_t` list.
+Write a function that sets the value of a bit to `1` at a given index.
 
-### 4. Free list
+### 4.100
 
-Write a function that frees a `list_t` list.
+Write a function that sets the value of a bit to `0` at a given index.
 
-##	Examples and tests
+### 5.101
 
-
+Write a function that returns the number of bits you would need to flip to get from one number to another. 
