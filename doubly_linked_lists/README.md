@@ -9,20 +9,20 @@
 ## Objective
 
 
-    What is a doubly linked list
-    How to use doubly linked lists
-    Start to look for the right source of information without too much help
+What is a doubly linked list
+How to use doubly linked lists
+Start to look for the right source of information without too much help
 
 ## Requirements
 
 
-    Allowed editors: `vi`, `vim`, `emacs`
-    All files will be compiled on Ubuntu 20.04 LTS
-    Code must follow the `Betty` style
-    Global variables are not allowed
-    No more than 5 functions per file
-    The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden.
-    All prototypes for functions should be included in our header file `lists.h`
+Allowed editors: `vi`, `vim`, `emacs`
+All files will be compiled on Ubuntu 20.04 LTS
+Code must follow the `Betty` style
+Global variables are not allowed
+No more than 5 functions per file
+The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden.
+All prototypes for functions should be included in our header file `lists.h`
 
 ## Mandatory tasks
 
