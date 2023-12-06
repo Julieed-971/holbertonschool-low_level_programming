@@ -14,7 +14,7 @@ int copy_file(const char *file_from, const char *file_to)
 	ssize_t num_read, num_write;
 	char buffer[1024];
 
-	if (file_from == NULL || file_to == NULL)
+	if (file_from == NULL)
 		manage_error(98, "Error: Can't read from file %s\n", file_from);
 	fd1 = open(file_from, O_RDONLY);
 	if (fd1 == -1)
@@ -64,7 +64,7 @@ void manage_error(int exit_code, const char *error_message, ...)
 	va_list args;
 
 	va_start(args, error_message);
-	dprintf(2, error_message, args);
+	dprintf(STDERR_FILENO, error_message, args);
 	va_end(args);
 
 	exit(exit_code);
