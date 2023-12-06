@@ -10,27 +10,22 @@
 
 int copy_file(const char *file_from, const char *file_to)
 {
-	int fd1, fd2, FD_VALUE;
+	int fd1, fd2;
 	ssize_t num_read, num_write;
 	char buffer[1024];
 
-	if (file_from == NULL)
+	if (file_from == NULL || file_to == NULL)
 		manage_error(98, "Error: Can't read from file %s\n", file_from);
 
 	fd1 = open(file_from, O_RDONLY);
 	if (fd1 == -1)
 	{
-		FD_VALUE = close(fd1);
-		if (FD_VALUE == -1)
-			manage_error(100, "Error: Can't close fd %d\n", fd1);
 		manage_error(98, "Error: Can't read from file %s\n", file_from);
 	}
 	fd2 = open(file_to, O_RDWR | O_CREAT | O_TRUNC, 0664);
 	if (fd2 == -1)
 	{
-		FD_VALUE = close(fd2);
-		if (FD_VALUE == -1)
-			manage_error(100, "Error: Can't close fd %d\n", fd2);
+		close(fd1);
 		manage_error(99, "Error: Can't write to %s\n", file_to);
 	}
 	while ((num_read = read(fd1, buffer, sizeof(buffer))) > 0)
@@ -40,8 +35,17 @@ int copy_file(const char *file_from, const char *file_to)
 
 		num_write = write(fd2, buffer, num_read);
 		if (num_read != num_write)
+		{
+			close(fd1);
+			close(fd2);
 			manage_error(99, "Error: Can't write to %s\n", file_to);
+		}
 	}
+	if (close(fd1) == -1)
+		manage_error(100, "Error: Can't close fd %d\n", fd1);
+	if (close(fd2) == -1)
+		manage_error(100, "Error: Can't close fd %d\n", fd2);
+
 	return (0);
 }
 
