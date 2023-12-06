@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * copy_file - copy text from a file to another
+ * main - copy text from a file to another
  * @ac: number of command line arguments
  * @av: command line arguments
  *
