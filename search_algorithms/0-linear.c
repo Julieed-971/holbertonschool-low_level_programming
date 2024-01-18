@@ -5,7 +5,7 @@
 * @array: array to search for
 * @size: size of the array
 * @value: value to search
-
+*
 * Return: index of -1 if failed
 */
 
