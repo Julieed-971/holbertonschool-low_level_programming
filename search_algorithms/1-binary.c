@@ -4,7 +4,8 @@
 * print_array - Prints an array of integers
 *
 * @array: The array to be printed
-* @: Number of elements in @array
+* @left: beginning of the array
+* @right: end of the array
 */
 void print_array(int *array, size_t left, size_t right)
 {
