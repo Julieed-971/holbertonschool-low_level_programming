@@ -1,0 +1,6 @@
+vscode_workspace
+*
+!**/
+!*.*
+*.json
+*.vscode
